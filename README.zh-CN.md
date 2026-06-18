@@ -15,7 +15,7 @@
 
 ```bash
 # 克隆并安装
-git clone https://github.com/YOUR_USERNAME/ecc-hermes.git
+git clone https://github.com/JingWang-Star996/ecc-hermes.git
 cd ecc-hermes
 ./install.sh
 ```
@@ -146,7 +146,7 @@ Load skill: agent-architecture-audit
 
 ```bash
 # 1. Fork 并克隆
-git clone https://github.com/YOUR_USERNAME/ecc-hermes.git
+git clone https://github.com/JingWang-Star996/ecc-hermes.git
 cd ecc-hermes
 
 # 2. 创建分支

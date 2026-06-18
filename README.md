@@ -17,7 +17,7 @@ This project adapts **20 universal skills** from ECC for Hermes and OpenClaw use
 
 ```bash
 # Clone and install
-git clone https://github.com/YOUR_USERNAME/ecc-hermes.git
+git clone https://github.com/JingWang-Star996/ecc-hermes.git
 cd ecc-hermes
 ./install.sh
 ```
