@@ -6,7 +6,7 @@
 
 [ECC (Everything Claude Code)](https://github.com/affaan-m/ECC) 是一个 217K+ stars 的 AI 编程 Agent 优化系统，包含 skills、hooks、最佳实践等。但 ECC 原生不支持 Hermes 和 OpenClaw。
 
-本项目从 ECC 中适配了 **20 个通用 skills**，供 Hermes 和 OpenClaw 用户使用：
+本项目从 ECC 中适配了 **23 个通用 skills**，供 Hermes 和 OpenClaw 用户使用：
 - ✅ 移除 Claude Code 专属依赖（hooks、CLAUDE.md、/commands）
 - ✅ 保留核心方法论和最佳实践
 - ✅ 格式符合 Hermes/OpenClaw skill 规范
@@ -59,12 +59,15 @@ cd ecc-hermes
 | `context-budget` | 上下文窗口消耗审计 |
 | `token-budget-advisor` | 响应前控制深度级别 |
 
-### 持续运营（2 个 skills）
+### 持续运营（5 个 skills）
 
 | Skill | 用途 |
 |-------|------|
 | `continuous-agent-loop` | 自主 Agent 循环模式 |
 | `cost-aware-llm-pipeline` | LLM API 成本优化 |
+| `continuous-learning-v2` | 基于 instinct 的学习系统，带置信度评分 |
+| `cost-tracking` | 追踪 token 使用、支出和预算 |
+| `prompt-optimizer` | 分析和优化 prompts 以获得更好性能 |
 
 ### 软件工程（7 个 skills）
 
@@ -87,8 +90,8 @@ cd ecc-hermes
 
 ## 未适配的 Skills
 
-**14 个 skills 被拒绝**，原因：
-- 🔴 依赖 Claude Code hooks 系统（9 个）：`continuous-learning-v2`、`autonomous-loops` 等
+**11 个 skills 被拒绝**，原因：
+- 🔴 依赖 Claude Code hooks 系统（6 个）：`autonomous-loops`、`autonomous-agent-harness` 等
 - 🟡 依赖特定 MCP 工具（3 个）：`deep-research`（firecrawl/exa）、`design-system`
 - 🟡 领域不匹配（2 个）：`benchmark-methodology`、`agent-sort`
 

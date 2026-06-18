@@ -8,7 +8,7 @@
 
 [ECC (Everything Claude Code)](https://github.com/affaan-m/ECC) is a 217K+ stars collection of skills, hooks, and best practices for AI coding agents. However, ECC doesn't natively support Hermes or OpenClaw.
 
-This project adapts **20 universal skills** from ECC for Hermes and OpenClaw users:
+This project adapts **23 universal skills** from ECC for Hermes and OpenClaw users:
 - ✅ Removed Claude Code-specific dependencies (hooks, CLAUDE.md, /commands)
 - ✅ Preserved core methodologies and best practices
 - ✅ Format-compliant with Hermes/OpenClaw skill specs
@@ -43,11 +43,14 @@ The installer auto-detects Hermes and/or OpenClaw and installs skills to the cor
 | `context-budget` | Audit context window consumption |
 | `token-budget-advisor` | Control response depth before answering |
 
-### Continuous Operations (2 skills)
+### Continuous Operations (5 skills)
 | Skill | Purpose |
 |-------|---------|
 | `continuous-agent-loop` | Patterns for autonomous agent loops |
 | `cost-aware-llm-pipeline` | Cost optimization for LLM API usage |
+| `continuous-learning-v2` | Instinct-based learning system with confidence scoring |
+| `cost-tracking` | Track token usage, spending, and budgets |
+| `prompt-optimizer` | Analyze and optimize prompts for better performance |
 
 ### Software Engineering (7 skills)
 | Skill | Purpose |
@@ -68,8 +71,8 @@ The installer auto-detects Hermes and/or OpenClaw and installs skills to the cor
 
 ## What was NOT adapted
 
-**14 skills rejected** due to:
-- 🔴 Claude Code hooks dependency (9): `continuous-learning-v2`, `autonomous-loops`, etc.
+**11 skills rejected** due to:
+- 🔴 Claude Code hooks dependency (6): `autonomous-loops`, `autonomous-agent-harness`, etc.
 - 🟡 MCP tool dependency (3): `deep-research` (firecrawl/exa), `design-system`
 - 🟡 Wrong domain (2): `benchmark-methodology`, `agent-sort`
 

@@ -101,6 +101,33 @@ Complete catalog of adapted ECC skills for Hermes and OpenClaw.
 - Retry logic optimization
 - Prompt caching strategies
 
+### continuous-learning-v2
+**Purpose**: Instinct-based learning system that observes sessions and evolves patterns into skills  
+**Use when**: Setting up automatic learning, reviewing instincts, evolving patterns  
+**Key features**:
+- Atomic "instincts" with confidence scoring
+- Project-scoped vs global patterns
+- Periodic analysis via cron or manual trigger
+- Evolution pipeline: observations → instincts → skills
+
+### cost-tracking
+**Purpose**: Track and report token usage, spending, and budgets  
+**Use when**: Analyzing costs, checking usage trends, budget planning  
+**Key features**:
+- Query Hermes/OpenClaw session databases
+- Estimate token usage from message content
+- Cost breakdown by session, model, date
+- CSV export for further analysis
+
+### prompt-optimizer
+**Purpose**: Analyze and optimize prompts for better agent performance  
+**Use when**: Improving prompt quality, writing better instructions  
+**Key features**:
+- 6-phase analysis pipeline
+- Intent detection and scope assessment
+- Skill matching and workflow recommendation
+- Full and quick optimized prompt versions
+
 ## Software Engineering (7 skills)
 
 ### api-connector-builder
@@ -211,17 +238,14 @@ Complete catalog of adapted ECC skills for Hermes and OpenClaw.
 | Usage Guide | 1 |
 | **Total** | **21** |
 
-## Rejected Skills (14)
+## Rejected Skills (11)
 
 See [ADAPTATION-NOTES.md](ADAPTATION-NOTES.md) for details on why these skills were not adapted.
 
-### Claude Code Hooks Dependency (9)
-- continuous-learning
-- continuous-learning-v2
+### Claude Code Hooks Dependency (6)
+- continuous-learning (deprecated, replaced by v2)
 - autonomous-loops
 - autonomous-agent-harness
-- cost-tracking
-- prompt-optimizer
 - security-scan
 - agentic-os
 - agent-sort
@@ -233,13 +257,13 @@ See [ADAPTATION-NOTES.md](ADAPTATION-NOTES.md) for details on why these skills w
 
 ### Wrong Domain (2)
 - benchmark-methodology
-- agent-sort
+- agent-sort (duplicate)
 
 ---
 
 **Total ECC skills**: 271  
-**Adapted**: 20 (7.4%)  
-**Rejected**: 14 (5.2%)  
+**Adapted**: 23 (8.5%)  
+**Rejected**: 11 (4.1%)  
 **Not reviewed**: 237 (87.4%)
 
 The 237 unreviewed skills are mostly language-specific (TypeScript, Python, Go, etc.) or framework-specific (React, Django, etc.) and can be adapted on-demand.
