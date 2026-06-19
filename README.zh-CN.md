@@ -6,7 +6,7 @@
 
 [ECC (Everything Claude Code)](https://github.com/affaan-m/ECC) 是一个 217K+ stars 的 AI 编程 Agent 优化系统，包含 skills、hooks、最佳实践等。但 ECC 原生不支持 Hermes 和 OpenClaw。
 
-本项目从 ECC 中适配了 **23 个通用 skills**，供 Hermes 和 OpenClaw 用户使用：
+本项目从 ECC 中适配了 **24 个通用 skills**，供 Hermes 和 OpenClaw 用户使用：
 - ✅ 移除 Claude Code 专属依赖（hooks、CLAUDE.md、/commands）
 - ✅ 保留核心方法论和最佳实践
 - ✅ 格式符合 Hermes/OpenClaw skill 规范
@@ -87,6 +87,12 @@ cd ecc-hermes
 |-------|------|
 | `security-review` | 安全检查清单和模式 |
 | `security-bounty-hunter` | 漏洞赏金猎人 |
+
+### 沟通与用户体验（1 个 skill）
+
+| Skill | 用途 |
+|-------|------|
+| `requirement-mediator` | 充当用户与执行 AI 之间的"需求翻译官"。通过结构化澄清（选项而非开放问题）帮助用户将模糊需求转化为清晰规格。基于认知负荷理论和服务设计原则。 |
 
 ## 未适配的 Skills
 

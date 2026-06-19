@@ -8,7 +8,7 @@
 
 [ECC (Everything Claude Code)](https://github.com/affaan-m/ECC) is a 217K+ stars collection of skills, hooks, and best practices for AI coding agents. However, ECC doesn't natively support Hermes or OpenClaw.
 
-This project adapts **23 universal skills** from ECC for Hermes and OpenClaw users:
+This project adapts **24 universal skills** from ECC for Hermes and OpenClaw users:
 - ✅ Removed Claude Code-specific dependencies (hooks, CLAUDE.md, /commands)
 - ✅ Preserved core methodologies and best practices
 - ✅ Format-compliant with Hermes/OpenClaw skill specs
@@ -68,6 +68,11 @@ The installer auto-detects Hermes and/or OpenClaw and installs skills to the cor
 |-------|---------|
 | `security-review` | Security checklist and patterns |
 | `security-bounty-hunter` | Hunt for exploitable security issues |
+
+### Communication & User Experience (1 skill)
+| Skill | Purpose |
+|-------|---------|
+| `requirement-mediator` | Act as a "requirement translator" between users and execution AI. Help users articulate vague needs into clear specifications through structured clarification (options, not open questions). Based on cognitive load theory and service design principles. |
 
 ## What was NOT adapted
 
